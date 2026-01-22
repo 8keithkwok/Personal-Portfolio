@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "Next.js",
   ],
   authors: [{ name: "Kwok Sui Ki, Keith" }],
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
     title: "Keith Kwok | Tech Lead & AI Engineer",
     description:
