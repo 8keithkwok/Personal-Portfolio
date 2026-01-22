@@ -6,6 +6,7 @@ import {
   Mail,
   Phone,
   Linkedin,
+  Github,
   MapPin,
   Copy,
   Check,
@@ -51,6 +52,13 @@ export default function ContactPage() {
       label: "LinkedIn",
       value: personalInfo.linkedinDisplay,
       href: personalInfo.linkedin,
+      external: true,
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      value: personalInfo.githubDisplay,
+      href: personalInfo.github,
       external: true,
     },
     {

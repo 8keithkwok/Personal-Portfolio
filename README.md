@@ -2,6 +2,8 @@
 
 A modern, animated personal portfolio website built with Next.js 16, Tailwind CSS 4, and Framer Motion.
 
+🌐 **Live Website**: [https://8keithkwok.github.io/Personal-Portfolio/](https://8keithkwok.github.io/Personal-Portfolio/)
+
 ## Features
 
 - **Dark Purple Theme** - Elegant dark mode with purple accent colors

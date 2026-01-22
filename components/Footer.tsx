@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Linkedin, Mail, Phone, Heart } from "lucide-react";
+import { Linkedin, Mail, Phone, Heart, Github } from "lucide-react";
 import { personalInfo, navLinks } from "@/lib/data";
 
 export default function Footer() {
@@ -13,6 +13,11 @@ export default function Footer() {
       icon: Linkedin,
       href: personalInfo.linkedin,
       label: "LinkedIn",
+    },
+    {
+      icon: Github,
+      href: personalInfo.github,
+      label: "GitHub",
     },
     {
       icon: Mail,
@@ -69,8 +74,8 @@ export default function Footer() {
                 <motion.a
                   key={social.label}
                   href={social.href}
-                  target={social.label === "LinkedIn" ? "_blank" : undefined}
-                  rel={social.label === "LinkedIn" ? "noopener noreferrer" : undefined}
+                  target={social.label === "LinkedIn" || social.label === "GitHub" ? "_blank" : undefined}
+                  rel={social.label === "LinkedIn" || social.label === "GitHub" ? "noopener noreferrer" : undefined}
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="p-3 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-400 hover:text-purple-400 hover:border-purple-500/30 transition-all"

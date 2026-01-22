@@ -5,6 +5,8 @@ export const personalInfo = {
   email: "8keithkwok@gmail.com",
   linkedin: "https://www.linkedin.com/in/8keithkwok/",
   linkedinDisplay: "linkedin.com/in/8keithkwok",
+  github: "https://github.com/8keithkwok",
+  githubDisplay: "github.com/8keithkwok",
 };
 
 export const summary = `Results-driven Tech Lead with 5+ years of full-stack development experience and 2 years specializing in Agentic AI and LLM Orchestration. Led cross-functional teams of 12+ members using Agile methodology, delivering production-grade AI solutions that achieved 10x transaction growth. Proven expertise in AWS Serverless Architecture, end-to-end project delivery, and translating business requirements into technical specifications.`;

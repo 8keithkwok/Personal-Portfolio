@@ -36,7 +36,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Kwok Sui Ki, Keith" }],
   icons: {
-    icon: "/icon.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
   openGraph: {
     title: "Keith Kwok | Tech Lead & AI Engineer",
