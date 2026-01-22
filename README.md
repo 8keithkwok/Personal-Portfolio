@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Keith Kwok - Personal Portfolio
+
+A modern, animated personal portfolio website built with Next.js 16, Tailwind CSS 4, and Framer Motion.
+
+## Features
+
+- **Dark Purple Theme** - Elegant dark mode with purple accent colors
+- **Rich Animations** - Scroll reveal, hover effects, particle background, typewriter effect
+- **Responsive Design** - Mobile-first design with hamburger menu for mobile devices
+- **Multi-page Structure** - Separate pages for About, Experience, Skills, Certifications, and Contact
+- **Static Export** - Optimized for GitHub Pages deployment
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Particles**: tsparticles
+- **Icons**: Lucide React
+- **Fonts**: Space Grotesk, Inter, JetBrains Mono
+
+## Pages
+
+| Page | Description |
+|------|-------------|
+| `/` | Hero section with typewriter effect and particle background |
+| `/about` | Personal profile card, summary, education, and certifications preview |
+| `/experience` | Interactive timeline with expandable job cards |
+| `/skills` | Categorized skills grid with progress animations |
+| `/certifications` | Certification cards grouped by year |
+| `/contact` | Contact information with copy-to-clipboard and contact form |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20+
+- Yarn
+
+### Installation
 
 ```bash
-npm run dev
-# or
+# Install dependencies
+yarn install
+
+# Start development server
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+yarn build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### GitHub Pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your code to the `main` branch
+2. GitHub Actions will automatically build and deploy to GitHub Pages
+3. Enable GitHub Pages in your repository settings (Settings > Pages > Source: GitHub Actions)
 
-## Deploy on Vercel
+### Manual Build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+yarn build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The static files will be generated in the `out/` directory.
+
+## Project Structure
+
+```
+├── app/
+│   ├── layout.tsx          # Root layout with fonts
+│   ├── page.tsx            # Home/Hero page
+│   ├── globals.css         # Global styles and CSS variables
+│   ├── about/page.tsx
+│   ├── experience/page.tsx
+│   ├── skills/page.tsx
+│   ├── certifications/page.tsx
+│   └── contact/page.tsx
+├── components/
+│   ├── Navigation.tsx      # Responsive navigation
+│   ├── Footer.tsx
+│   ├── AnimatedSection.tsx # Scroll animation wrapper
+│   ├── ParticleBackground.tsx
+│   ├── TypewriterText.tsx
+│   ├── GlowButton.tsx
+│   ├── PageWrapper.tsx
+│   └── SectionHeader.tsx
+├── lib/
+│   └── data.ts             # Resume data
+└── .github/
+    └── workflows/
+        └── deploy.yml      # GitHub Actions workflow
+```
+
+## Color Palette
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Background | `#0a0a0f` | Primary background |
+| Background Secondary | `#13131a` | Cards and sections |
+| Purple 500 | `#a855f7` | Primary accent |
+| Purple 400 | `#c084fc` | Light accent |
+| Fuchsia 400 | `#e879f9` | Gradient accent |
+| Text Primary | `#f5f5f7` | Main text |
+| Text Secondary | `#a1a1aa` | Muted text |
+
+## License
+
+MIT
