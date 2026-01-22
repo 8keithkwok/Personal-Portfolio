@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
+import { ArrowRight, Linkedin, Mail, Download } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ParticleBackground from "@/components/ParticleBackground";
@@ -17,13 +17,6 @@ export default function Home() {
     "Full Stack Developer",
     "LLM Specialist",
   ];
-
-  const scrollToContent = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
 
   return (
     <div className="min-h-screen bg-[#0a0a0f]">
@@ -43,20 +36,6 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn delay={0.2}>
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="mb-6"
-            >
-              <span className="inline-flex items-center px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-sm font-medium">
-                <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
-                Available for opportunities
-              </span>
-            </motion.div>
-          </FadeIn>
-
-          <FadeIn delay={0.3}>
             <h1 className="font-[family-name:var(--font-space-grotesk)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               <span className="text-zinc-100">Hi, I'm </span>
               <span className="text-gradient">Keith Kwok</span>
@@ -121,23 +100,6 @@ export default function Home() {
               </motion.a>
             </div>
           </FadeIn>
-
-          {/* Scroll Indicator */}
-          <motion.button
-            onClick={scrollToContent}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.6 }}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 text-zinc-500 hover:text-purple-400 transition-colors cursor-pointer"
-            aria-label="Scroll down"
-          >
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            >
-              <ChevronDown size={32} />
-            </motion.div>
-          </motion.button>
         </div>
       </section>
 
