@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, ExternalLink, Calendar, ArrowRight } from "lucide-react";
+import { Award, Calendar, ArrowRight, Info } from "lucide-react";
 import PageWrapper from "@/components/PageWrapper";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection, { StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
@@ -76,9 +76,22 @@ export default function CertificationsPage() {
                               <Award size={24} />
                             </div>
                             <div className="flex-1 min-w-0">
-                              <h3 className="text-zinc-100 font-semibold text-sm sm:text-base mb-1 group-hover:text-purple-300 transition-colors">
-                                {cert.name}
-                              </h3>
+                              <div className="flex items-center gap-2 flex-wrap">
+                                <h3 className="text-zinc-100 font-semibold text-sm sm:text-base group-hover:text-purple-300 transition-colors">
+                                  {cert.name}
+                                </h3>
+                                {cert.note && (
+                                  <span
+                                    className="group/note relative inline-flex text-zinc-500 hover:text-purple-400 cursor-help transition-colors"
+                                    title={cert.note}
+                                  >
+                                    <Info size={16} aria-label="More information" />
+                                    <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-2 rounded-lg bg-zinc-800 border border-zinc-700 text-zinc-300 text-xs max-w-xs whitespace-normal opacity-0 invisible group-hover/note:opacity-100 group-hover/note:visible transition-all duration-200 z-20 pointer-events-none shadow-xl">
+                                      {cert.note}
+                                    </span>
+                                  </span>
+                                )}
+                              </div>
                               {cert.issuer && (
                                 <p className="text-zinc-500 text-sm">
                                   Issued by {cert.issuer}

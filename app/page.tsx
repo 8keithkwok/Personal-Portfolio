@@ -13,6 +13,7 @@ import { personalInfo } from "@/lib/data";
 export default function Home() {
   const roles = [
     "Tech Lead",
+    "Solution Architect",
     "AI Engineer",
     "Full Stack Developer",
     "LLM Specialist",

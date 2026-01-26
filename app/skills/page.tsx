@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, Layout, Server, Settings, ArrowRight } from "lucide-react";
+import { Brain, Layout, Server, Settings, Target, ArrowRight } from "lucide-react";
 import PageWrapper from "@/components/PageWrapper";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection, { StaggerContainer, StaggerItem } from "@/components/AnimatedSection";
@@ -13,6 +13,7 @@ const iconMap: Record<string, React.ElementType> = {
   Layout: Layout,
   Server: Server,
   Settings: Settings,
+  Target: Target,
 };
 
 function SkillCategoryCard({ category, index }: { category: SkillCategory; index: number }) {

@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Kwok Sui Ki, Keith",
-  title: "Tech Lead & AI Engineer",
+  title: "Tech Lead",
   phone: "+852 5938 8638",
   email: "8keithkwok@gmail.com",
   linkedin: "https://www.linkedin.com/in/8keithkwok/",
@@ -9,7 +9,7 @@ export const personalInfo = {
   githubDisplay: "github.com/8keithkwok",
 };
 
-export const summary = `Results-driven Tech Lead with 5+ years of full-stack development experience and 2 years specializing in Agentic AI and LLM Orchestration. Led cross-functional teams of 12+ members using Agile methodology, delivering production-grade AI solutions that achieved 10x transaction growth. Proven expertise in AWS Serverless Architecture, end-to-end project delivery, and translating business requirements into technical specifications.`;
+export const summary = `Tech Lead with strong focus on solution architecture, business analysis, and project planning — 5+ years in software delivery, 2 years specializing in LLM Agent design and orchestration. Leads end-to-end delivery from requirements gathering → technical specification → system design → deployment, and has driven 10x transaction growth by managing cross-functional, Agile teams of 12+ members. Deep expertise in tool calling, prompt engineering, multi-agent systems, agent skills, and LangChain/LangGraph; proven ability to translate business needs into executable technical solutions and to communicate trade-offs with non-technical stakeholders.`;
 
 export const stats = [
   { label: "Years Experience", value: "5+" },
@@ -38,31 +38,37 @@ export const workExperience: Job[] = [
     period: "09/2023 - Present",
     sections: [
       {
-        title: "AI & LLM Systems Development",
+        title: "Planning & Project Management",
         items: [
-          "Architected and deployed Agentic AI platforms using LangChain and LangGraph, implementing multi-agent systems with autonomous task execution and tool calling capabilities.",
-          "Designed advanced AI agent architectures including multi-agent systems, ReAct agents, and plan-and-execute patterns for complex autonomous task orchestration.",
-          "Implemented advanced prompt engineering techniques including chain-of-thought reasoning, few-shot learning, and dynamic system prompts.",
-          "Built intelligent chat assistants using OpenAI API, Anthropic Claude API, and Vercel AI SDK with streaming responses and real-time WebSocket communication.",
-          "Developed AI-powered risk analysis systems using DeepSeek and Next.js with automated 9-step AI agent workflows.",
+          "Led end-to-end project delivery for enterprise clients: requirements gathering → business analysis → technical specification → system design → deployment.",
+          "Managed cross-functional collaboration using Agile/Scrum with Jira; led sprint planning and release planning for a 12-member outsourced team, resulting in 10x transaction volume growth.",
+          "Authored technical specifications (system architecture diagrams, ERD, API documentation) and stakeholder presentations; facilitated trade-off discussions and aligned non-technical stakeholders with technical constraints.",
+          "Mentored 4 junior developers through pair programming and code reviews, improving code quality and reducing bug rates by 25%.",
         ],
       },
       {
-        title: "Microservices Architecture & Cloud Infrastructure",
+        title: "LLM Agent Architecture & Design",
         items: [
-          "Designed serverless architecture using AWS Lambda, DynamoDB, API Gateway achieving 45% reduction in cloud costs.",
-          "Implemented event-driven architecture with DynamoDB Streams and EventBridge for real-time data processing.",
-          "Established observability infrastructure using CloudWatch and Datadog, increasing customer service response time by 30%.",
-          "Built CI/CD pipelines with Docker containerization supporting multi-environment deployments.",
+          "Architected Agentic AI platforms using LangChain and LangGraph: multi-agent systems, autonomous task execution, and tool calling / function-calling strategies.",
+          "Designed agent architectures (ReAct, plan-and-execute patterns) and agent workflows for complex orchestration and decision-making; defined prompt engineering practices (chain-of-thought, few-shot, dynamic system prompts) for production LLM use cases.",
+          "Led design of AI-powered risk analysis and chat assistants (OpenAI, Anthropic Claude, Vercel AI SDK), including streaming, state management, and 9-step AI agent workflows; e.g. shipment/supply-chain risk analysis chat agent with tool calling and stream resumption (Next.js, PostgreSQL, Redis, Docker).",
         ],
       },
       {
-        title: "Project Management & Client Delivery",
+        title: "Solution Architecture & Cloud",
         items: [
-          "Led end-to-end project delivery for enterprise clients, managing full lifecycle from requirements to deployment.",
-          "Managed 12-member outsourced team using Agile methodology, resulting in 10x transaction volume growth.",
-          "Authored comprehensive technical specifications including system architecture diagrams and API documentation.",
-          "Mentored 4 junior developers, reducing bug rates by 25%.",
+          "Designed and led serverless architecture (AWS Lambda, DynamoDB single-table, API Gateway, Serverless Framework), achieving 45% cloud cost reduction; led architectural decisions on event-driven design (DynamoDB Streams, EventBridge) for high-throughput systems; e.g. multi-currency FX admin portal and serverless backend (React, Serverless Framework, DynamoDB Streams, OTP auth).",
+          "Established observability (CloudWatch, Datadog) and CI/CD (Docker, multi-environment DEV/UAT/PROD), improving issue detection and customer service response time by 30%.",
+        ],
+      },
+      {
+        title: "Representative deliverables (client work anonymised)",
+        items: [
+          "AI shipment risk platform: 9-step analysis pipeline, tool-calling agent (Vercel AI SDK, DeepSeek), streaming and stream resumption; Next.js, PostgreSQL, Redis, Docker.",
+          "Internal AI project management: Bedrock Agents, Slack, Kanban/backlog; Amplify Gen 2, Lambda, DynamoDB, Cognito.",
+          "Multi-currency FX admin & backend: React admin portal (orders, rates, users, RBAC); serverless APIs, DynamoDB Streams, OTP auth.",
+          "Travel & FX self-service kiosk: React app, bill validator integration, deposit/withdraw, multi-currency; 90% reduction in device downtime.",
+          "LLM travel assistant & microservices: LangChain/ChatKit chat POC (streaming, DynamoDB); WebSocket chatbot with tool calling (rate alert, budget, FX); rate-alert and notification services.",
         ],
       },
     ],
@@ -73,19 +79,16 @@ export const workExperience: Job[] = [
     period: "09/2019 - 08/2023",
     sections: [
       {
-        title: "Multi-Platform Frontend Development",
+        title: "Multi-Platform Development",
         items: [
-          "Developed cross-platform applications spanning Web (React, Next.js, TypeScript, Tailwind CSS), Mobile (React Native, Expo), and Desktop (Electron).",
-          "Built real-time features using WebSocket connections with automatic reconnection and state synchronization.",
-          "Implemented financial service interfaces with multi-currency support and internationalization (i18n).",
+          "Contributed to requirements analysis and technical feasibility for features; developed cross-platform applications (Web: React, Next.js, TypeScript; Mobile: React Native, Expo; Desktop: Electron) with real-time WebSocket features and financial interfaces (multi-currency, i18n).",
         ],
       },
       {
         title: "Backend API & System Integration",
         items: [
-          "Designed RESTful API and GraphQL API endpoints with Express.js, JWT authentication, and RBAC.",
-          "Integrated hardware systems achieving 90% reduction in device downtime.",
-          "Implemented secure authentication flows using AWS Cognito with passwordless OTP login.",
+          "Designed RESTful/GraphQL APIs (Express.js, JWT, RBAC) and integrated hardware (e.g. bill validators for kiosks), achieving 90% reduction in device downtime; e.g. self-service travel & FX kiosk with bill validator integration and multi-currency flows; implemented auth via AWS Cognito and DynamoDB.",
+          "Established CI/CD (Docker, EAS Build, Serverless Framework) and code reviews for type safety and documentation standards.",
         ],
       },
     ],
@@ -95,9 +98,9 @@ export const workExperience: Job[] = [
     title: "Data Engineering Intern",
     period: "06/2019 - 08/2019",
     highlights: [
-      "Developed React Native mobile applications with efficient UI/UX.",
-      "Implemented scalable DynamoDB database designs optimizing for query patterns.",
-      "Launched products with integrated analytics tracking.",
+      "Developed React Native mobile applications with emphasis on efficient UI/UX, conducting usability testing to refine interfaces based on user feedback.",
+      "Implemented scalable DynamoDB database designs optimizing for query patterns and cost efficiency with data modeling best practices.",
+      "Launched products with integrated analytics tracking, enabling data-driven continuous improvement.",
     ],
   },
   {
@@ -106,7 +109,7 @@ export const workExperience: Job[] = [
     period: "02/2020 – 02/2025",
     highlights: [
       "Provided comprehensive IT services and technical support for educational environments.",
-      "Managed information systems infrastructure for multiple classrooms.",
+      "Managed and maintained information systems infrastructure for multiple classrooms.",
       "Ensured smooth operation of classroom technology systems and AV equipment.",
     ],
   },
@@ -123,24 +126,46 @@ export interface SkillCategory {
 
 export const skills: SkillCategory[] = [
   {
-    title: "AI / LLM / Generative AI",
+    title: "LLM Agent & AI",
     icon: "Brain",
     skills: [
       {
-        name: "LLM Orchestration",
-        items: ["LangChain", "LangGraph", "Vercel AI SDK"],
+        name: "Orchestration",
+        items: ["LangChain", "LangGraph", "Vercel AI SDK", "multi-agent systems", "agent skills", "tool calling / function calling"],
       },
       {
-        name: "AI Providers",
-        items: ["OpenAI API", "Anthropic Claude API", "DeepSeek", "AWS Bedrock"],
-      },
-      {
-        name: "Techniques",
-        items: ["Prompt Engineering", "RAG", "Semantic Search", "Vector Store", "Embeddings"],
+        name: "Prompt Engineering",
+        items: ["chain-of-thought", "few-shot learning", "system prompt design"],
       },
       {
         name: "Patterns",
-        items: ["Agentic AI", "Multi-Agent Systems", "Tool Calling", "Streaming"],
+        items: ["plan-and-execute", "ReAct", "autonomous agents", "agent workflow design"],
+      },
+      {
+        name: "Providers",
+        items: ["OpenAI", "Anthropic Claude", "DeepSeek", "AWS Bedrock Agents"],
+      },
+      {
+        name: "Familiar",
+        items: ["RAG", "vector stores"],
+      },
+    ],
+  },
+  {
+    title: "Planning & Project Management",
+    icon: "Target",
+    skills: [
+      {
+        name: "Methods & Practices",
+        items: ["Agile / Scrum", "Sprint planning", "Release planning", "Stakeholder management"],
+      },
+      {
+        name: "Analysis & Delivery",
+        items: ["Requirements elicitation", "Technical specification", "Impact analysis", "Cross-functional leadership"],
+      },
+      {
+        name: "Tools",
+        items: ["Jira", "Roadmap and milestone planning"],
       },
     ],
   },
@@ -167,24 +192,24 @@ export const skills: SkillCategory[] = [
     ],
   },
   {
-    title: "Backend & Cloud (AWS)",
+    title: "Solution Architecture & Cloud (AWS)",
     icon: "Server",
     skills: [
       {
-        name: "Backend",
-        items: ["Node.js", "Express.js", "Serverless Framework", "FastAPI"],
+        name: "Architecture",
+        items: ["Serverless and microservices architecture", "Lambda", "API Gateway", "DynamoDB (single-table)", "S3", "EventBridge"],
       },
       {
-        name: "API",
-        items: ["RESTful API", "GraphQL"],
+        name: "Auth & Observability",
+        items: ["Cognito", "IAM", "CloudWatch", "Datadog"],
       },
       {
-        name: "AWS Services",
-        items: ["Lambda", "API Gateway", "DynamoDB", "S3", "Cognito", "CloudWatch"],
+        name: "Backend & API",
+        items: ["Node.js", "Express.js", "Serverless Framework", "FastAPI", "RESTful / GraphQL API design"],
       },
       {
         name: "Languages",
-        items: ["TypeScript", "JavaScript", "Python", "SQL"],
+        items: ["TypeScript", "JavaScript", "Python", "SQL", "R", "SAS"],
       },
     ],
   },
@@ -194,19 +219,11 @@ export const skills: SkillCategory[] = [
     skills: [
       {
         name: "CI/CD",
-        items: ["Docker", "Docker Compose", "Containerization"],
+        items: ["Docker", "CI/CD", "Git"],
       },
       {
-        name: "Monitoring",
-        items: ["Datadog", "CloudWatch", "Observability"],
-      },
-      {
-        name: "Project Management",
-        items: ["Jira", "Agile", "Scrum"],
-      },
-      {
-        name: "Tools",
-        items: ["Git", "Postman", "MongoDB"],
+        name: "Testing & Tools",
+        items: ["Postman", "unit and integration testing"],
       },
     ],
   },
@@ -216,10 +233,15 @@ export interface Certification {
   name: string;
   year: string;
   issuer?: string;
+  note?: string;
 }
 
 export const certifications: Certification[] = [
-  { name: "Faculty AI for Leaders", year: "2025" },
+  {
+    name: "Faculty AI for Leaders",
+    year: "2025",
+    note: "Faculty is an AI company that runs executive programmes on AI strategy and leadership. This course was delivered face-to-face in the UK.",
+  },
   { name: "Google Data Analytics Professional Certificate", year: "2024", issuer: "Google" },
   { name: "SAS Joint Certificate in Data Mining", year: "2022", issuer: "SAS" },
   { name: "SAS Joint Certificate in Machine Learning", year: "2022", issuer: "SAS" },
