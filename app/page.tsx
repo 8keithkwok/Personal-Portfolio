@@ -14,9 +14,9 @@ export default function Home() {
   const roles = [
     "Tech Lead",
     "Solution Architect",
+    "Business Analyst",
+    "Project Manager",
     "AI Engineer",
-    "Full Stack Developer",
-    "LLM Specialist",
   ];
 
   return (
@@ -58,10 +58,12 @@ export default function Home() {
           <FadeIn delay={0.5}>
             <p className="text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
               Specializing in{" "}
-              <span className="text-purple-400 font-medium">Agentic AI</span> and{" "}
-              <span className="text-purple-400 font-medium">LLM Orchestration</span>.
-              Building production-grade AI solutions with{" "}
-              <span className="text-purple-400 font-medium">AWS Serverless Architecture</span>.
+              <span className="text-purple-400 font-medium">Solution Architecture</span>,{" "}
+              <span className="text-purple-400 font-medium">Business Analysis</span>, and{" "}
+              <span className="text-purple-400 font-medium">Project Management</span>
+              {" "}— and building production-grade{" "}
+              <span className="text-purple-400 font-medium">Agentic AI</span> solutions with{" "}
+              <span className="text-purple-400 font-medium">AWS Serverless</span>.
             </p>
           </FadeIn>
 
