@@ -9,7 +9,7 @@ import AnimatedSection, { StaggerContainer, StaggerItem } from "@/components/Ani
 type PortfolioItem = {
   title: string;
   description: string;
-  icon: React.ComponentType<{ size?: number }>;
+  icon: React.ComponentType<{ size?: number; className?: string }>;
   gradient: string;
   repoUrl?: string;
   liveUrl?: string;
